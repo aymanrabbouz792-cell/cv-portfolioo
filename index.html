@@ -1,0 +1,218 @@
+Parfait 👍
+Voici **un CV professionnel en HTML/CSS**, **bien organisé**, **design moderne**, prêt à être hébergé sur **GitHub Pages**.
+Tout est dans **un seul fichier `index.html`** (simple et propre).
+
+---
+
+## ✅ Caractéristiques
+
+* Design **professionnel et élégant**
+* Structure claire (profil, compétences, expérience, formation)
+* Responsive (s’adapte mobile / PC)
+* Facile à modifier
+* Compatible GitHub Pages
+
+---
+
+## 📁 Structure
+
+Tu peux simplement créer un dépôt GitHub et mettre ce fichier :
+
+```
+index.html
+```
+
+---
+
+## 💼 Code HTML + CSS (CV – Rania)
+
+Copie **tout** ce code dans un fichier `index.html` :
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Rania</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            background: #1e293b;
+            color: #fff;
+            padding: 30px;
+        }
+
+        .sidebar h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar h2 {
+            font-size: 16px;
+            font-weight: normal;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .sidebar section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            border-bottom: 1px solid #475569;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar p, .sidebar li {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .sidebar ul {
+            padding-left: 20px;
+        }
+
+        /* MAIN CONTENT */
+        .content {
+            padding: 40px;
+        }
+
+        .content section {
+            margin-bottom: 30px;
+        }
+
+        .content h3 {
+            font-size: 22px;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .job, .education {
+            margin-bottom: 20px;
+        }
+
+        .job h4, .education h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #0f172a;
+        }
+
+        .date {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h1>Rania</h1>
+        <h2>Développeuse / Étudiante / Profession</h2>
+
+        <section>
+            <h3>Contact</h3>
+            <p>Email : rania@email.com</p>
+            <p>Téléphone : +212 6 00 00 00 00</p>
+            <p>Ville, Pays</p>
+            <p>GitHub : github.com/rania</p>
+        </section>
+
+        <section>
+            <h3>Compétences</h3>
+            <ul>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>Design UI/UX</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Langues</h3>
+            <ul>
+                <li>Français – Courant</li>
+                <li>Anglais – Bon niveau</li>
+                <li>Arabe – Langue maternelle</li>
+            </ul>
+        </section>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="content">
+
+        <section>
+            <h3>Profil</h3>
+            <p>
+                Professionnelle motivée avec une forte capacité d’apprentissage,
+                passionnée par le développement web et la création de solutions
+                modernes et efficaces.
+            </p>
+        </section>
+
+        <section>
+            <h3>Expérience Professionnelle</h3>
+
+            <div class="job">
+                <h4>Développeuse Web – Entreprise XYZ</h4>
+                <div class="date">2024 – Présent</div>
+                <p>
+                    Création de sites web modernes, maintenance, amélioration
+                    de l’expérience utilisateur et collaboration en équipe.
+                </p>
+            </div>
+
+            <div class="job">
+                <h4>Stagiaire Développement Web</h4>
+                <div class="date">2023 – 2024</div>
+                <p>
+                    Participation au développement de projets web,
+                    intégration HTML/CSS et gestion du code avec Git.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Formation</h3>
+
+            <div class="education">
+                <h4>Licence / Diplôme en Informatique</h4>
+                <div class="date">2021 – 2024</div>
+                <p>Université / École</p>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
